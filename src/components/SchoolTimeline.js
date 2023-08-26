@@ -16,7 +16,7 @@ const SchoolTimeline = () => {
       image: "./Cpge.jpg",
     },
     {
-      name: "Université DEF",
+      name: "High School Mohamed 6",
       date: "2018 - 2019",
       description: "Bac science math.",
       image: "./m6.png",

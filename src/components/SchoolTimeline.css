@@ -1,0 +1,92 @@
+/* SchoolTimeline.css */
+.school-timeline-container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .timeline-header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .timeline-item:hover {
+    transform: translateX(10px);
+  }
+  
+  .timeline-item-image {
+    flex: 0 0 100px;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .timeline-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .timeline-item-content {
+    flex: 1;
+  }
+  
+  .timeline-item-date {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .timeline-item-name {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .timeline-item-description {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .timeline {
+      align-items: flex-start;
+    }
+  
+    .timeline-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .timeline-item.left .timeline-item-content {
+      order: 1;
+    }
+  
+    .timeline-item-image {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
